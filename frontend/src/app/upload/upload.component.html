@@ -1,0 +1,13 @@
+<div class="container container-table">
+  <div class="row vertical-center-row">
+    <div class="text-center col-md-4 col-md-offset-4">
+      <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <div class="form-group">
+          <label for="file">Please select the csv file</label>
+          <input formControlName="file" type="file" id="csv" class="form-control" (change)="onFileChange($event)" multiple>
+        </div>
+        <button class="btn btn-primary" type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+</div>
